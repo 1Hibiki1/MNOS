@@ -1,3 +1,4 @@
 *.sys
 .vscode
 scratch.txt
+build

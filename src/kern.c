@@ -44,9 +44,8 @@ void main(){
         "It might work, it might not work. gl c:\n\n"
     );
 
-    // extern int mouse_initialize(void);
-
     mouse_initialize();
+    mouse_enable();
 
     while(1) {
         puts("C:\\> ");
