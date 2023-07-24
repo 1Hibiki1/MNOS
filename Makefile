@@ -22,16 +22,14 @@ kern.sys: $(BUILD_DIR)/boot.bin $(BUILD_DIR)/kern.bin
 	cat $^ > $@
 
 $(BUILD_DIR)/boot.bin: $(BOOT_DIR)/boot.asm
+	mkdir -p $(BUILD_DIR)
 	$(AS) -fbin $< -o $@
 
 $(BUILD_DIR)/kern.bin: $(SRC_FILES)
 	$(CC) $(CCFLAGS) $^ -o $@
 
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
-
 clean:
-	rm -rf $(BUILD_DIR)/* kern.sys
+	rm -rf $(BUILD_DIR) kern.sys
 
 run: kern.sys
 	qemu-system-x86_64 -fda kern.sys

@@ -32,7 +32,7 @@ char inp_buf[INP_BUF_MAX_LEN];
 int shell_main() {
     /* echo shell */
     while(1) {
-        screen_puts("C:\> ");
+        screen_puts("C:\\> ");
         keyboard_readline(inp_buf, INP_BUF_MAX_LEN);
         screen_puts(inp_buf);
         screen_putc('\n');
