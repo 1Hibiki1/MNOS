@@ -12,4 +12,4 @@
 int rand(void);
 void srand(unsigned int seed);
 
-#endif   /* _RAND_H */
+#endif /* _RAND_H */

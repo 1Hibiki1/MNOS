@@ -24,4 +24,4 @@ void screen_putint(int num);
 void screen_puthex(unsigned int num);
 int screen_putpix(int x, int y, unsigned char col);
 
-#endif  /* _SCREEN_H */
+#endif /* _SCREEN_H */

@@ -23,11 +23,11 @@ typedef int ptrdiff_t;
 #define __WCHAR_T__
 #ifdef SIGNED_WCHAR
 typedef short wchar_t;
-#endif // SIGNED_WCHAR
+#endif  // SIGNED_WCHAR
 #ifdef UNSIGNED_WCHAR
 typedef unsigned short wchar_t;
-#endif // UNSIGNED_WCHAR
-#endif // __WCHAR_T_DEF
+#endif  // UNSIGNED_WCHAR
+#endif  // __WCHAR_T_DEF
 
 #define offsetof(type, member) ((unsigned)&((type*)0)->member)
 

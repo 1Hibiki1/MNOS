@@ -1,2 +1,2 @@
-# MNOS
- the first nonoperating-system
+#MNOS
+the first nonoperating - system

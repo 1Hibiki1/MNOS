@@ -29,7 +29,7 @@ typedef int intmax_t;
 #define INTMAX_MAX 32767
 typedef unsigned uintmax_t;
 #define UINTMAX_MAX 65535U
-#endif // __SMALLER_C_16__
+#endif  // __SMALLER_C_16__
 
 typedef signed char int8_t, int_least8_t, int_fast8_t;
 typedef unsigned char uint8_t, uint_least8_t, uint_fast8_t;
@@ -37,25 +37,25 @@ typedef unsigned char uint8_t, uint_least8_t, uint_fast8_t;
 typedef short int16_t, int_least16_t, int_fast16_t;
 typedef unsigned short uint16_t, uint_least16_t, uint_fast16_t;
 
-#define INT8_MIN        (-128)
-#define INT_LEAST8_MIN  (-128)
-#define INT_FAST8_MIN   (-128)
-#define INT8_MAX        127
-#define INT_LEAST8_MAX  127
-#define INT_FAST8_MAX   127
-#define UINT8_MAX       255
+#define INT8_MIN (-128)
+#define INT_LEAST8_MIN (-128)
+#define INT_FAST8_MIN (-128)
+#define INT8_MAX 127
+#define INT_LEAST8_MAX 127
+#define INT_FAST8_MAX 127
+#define UINT8_MAX 255
 #define UINT_LEAST8_MAX 255
-#define UINT_FAST8_MAX  255
+#define UINT_FAST8_MAX 255
 
-#define INT16_MIN        (-32767-1)
-#define INT_LEAST16_MIN  (-32767-1)
-#define INT_FAST16_MIN   (-32767-1)
-#define INT16_MAX        32767
-#define INT_LEAST16_MAX  32767
-#define INT_FAST16_MAX   32767
-#define UINT16_MAX       0xFFFF
+#define INT16_MIN (-32767 - 1)
+#define INT_LEAST16_MIN (-32767 - 1)
+#define INT_FAST16_MIN (-32767 - 1)
+#define INT16_MAX 32767
+#define INT_LEAST16_MAX 32767
+#define INT_FAST16_MAX 32767
+#define UINT16_MAX 0xFFFF
 #define UINT_LEAST16_MAX 0xFFFF
-#define UINT_FAST16_MAX  0xFFFF
+#define UINT_FAST16_MAX 0xFFFF
 
 #define INT8_C(val) (val)
 #define UINT8_C(val) (val)
@@ -72,13 +72,13 @@ typedef unsigned short uint16_t, uint_least16_t, uint_fast16_t;
 typedef int wchar_t;
 #define WCHAR_MIN (-32768)
 #define WCHAR_MAX 32767
-#endif // __SIGNED_WCHAR__
+#endif  // __SIGNED_WCHAR__
 #ifdef __UNSIGNED_WCHAR__
 typedef unsigned int wchar_t;
 #define WCHAR_MIN 0
 #define WCHAR_MAX 0xFFFF
-#endif // __UNSIGNED_WCHAR__
+#endif  // __UNSIGNED_WCHAR__
 
-#endif // WCHAR_MAX
+#endif  // WCHAR_MAX
 
 #endif

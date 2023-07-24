@@ -16,4 +16,4 @@ int strncmp(const char *X, const char *Y, size_t n);
 char *strpbrk(const char *X, const char *Y);
 char *strrchr(const char *str, int c);
 
-#endif  /* _STRING_H */
+#endif /* _STRING_H */
