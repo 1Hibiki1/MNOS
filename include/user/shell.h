@@ -12,4 +12,4 @@
 
 int shell_main();
 
-#endif  /* _SHELL_H */
+#endif /* _SHELL_H */

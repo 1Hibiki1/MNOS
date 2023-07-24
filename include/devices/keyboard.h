@@ -12,4 +12,4 @@
 char keyboard_getch();
 int keyboard_readline(char* buf, int len);
 
-#endif  /* _KEYBOARD_H */
+#endif /* _KEYBOARD_H */
