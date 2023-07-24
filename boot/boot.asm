@@ -1,6 +1,8 @@
 ORG 0x7C00
 
+; entrypoint
 SECTION .TEXT
+    ; set segment registers
     MOV AX, 0
     MOV DS, AX
     MOV ES, AX
@@ -20,10 +22,6 @@ SECTION .TEXT
     MOV CL, 2        ; Sector number
     MOV DH, 0        ; Head number
     INT 0x13
-
-    ;MOV AH, 0x2
-    ;INT 0x1A
-    ;PUSH DX
 
     JMP 0x8000  ; jump to kernel
 

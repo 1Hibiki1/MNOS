@@ -12,7 +12,7 @@ AS = nasm
 CCFLAGS = -SI$(INCLUDE_DIR) -flat16 -origin 0x8000
 
 # Source files and object files
-SRC_FILES := $(wildcard $(SRC_DIR)/**/*.c $(SRC_DIR)/*.c)
+SRC_FILES := $(shell find $(SRC_DIR) -type f -name '*.c')
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SRC_FILES))
 
 # Build targets
@@ -26,9 +26,6 @@ $(BUILD_DIR)/boot.bin: $(BOOT_DIR)/boot.asm
 
 $(BUILD_DIR)/kern.bin: $(SRC_FILES)
 	$(CC) $(CCFLAGS) $^ -o $@
-
-# $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c | $(BUILD_DIR)
-# 	$(CC) $(CCFLAGS) -c $< -o $@
 
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
